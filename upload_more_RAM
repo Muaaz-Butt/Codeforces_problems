@@ -1,0 +1,19 @@
+#include <iostream>
+ 
+using namespace std;
+ 
+int uploadMoreRam(int n, int k){
+    int temp = k - 1;
+    return (n * k) - temp;
+}
+ 
+int main() {
+    int t;
+    cin >> t;
+    while(t--) {
+        int n, k;
+        cin >> n >> k;
+        int result = uploadMoreRam(n, k);
+        cout << result << endl;
+    }
+}
