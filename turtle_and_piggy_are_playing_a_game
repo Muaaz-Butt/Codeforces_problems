@@ -1,0 +1,29 @@
+#include <iostream>
+#include <algorithm>
+
+using namespace std;
+
+int getScore(int x) {
+    int score = 0;
+    while (x > 1){
+        x /= 2;
+        score++;
+    }  
+    return score;
+}
+
+int main() {
+    int t;
+    cin >> t;
+    while(t--) {
+        int l, r;
+        cin >> l >> r;
+        int maxScore = 0;
+        int x = r;
+        while(x > 0 && x >= l) {
+            maxScore = max(maxScore, getScore(x));
+            x /= 2;
+        }
+        cout << maxScore << endl;
+    }
+}
