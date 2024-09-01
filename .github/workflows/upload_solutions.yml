@@ -27,4 +27,4 @@ jobs:
         python update_github.py
       env:
         GITHUB_TOKEN: ${{ secrets.CODEFORCE_TOKEN }}
-        CODEFORCES_HANDLE: ${{ secrets.CODEFORCES_HANDLE }}
+        CODEFORCES_HANDLE: ${{ secrets.muaazbutt }}
