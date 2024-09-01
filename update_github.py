@@ -3,7 +3,7 @@ from github import Github
 import os
 
 # Retrieve secrets from environment variables
-CODEFORCES_HANDLE = os.getenv('CODEFORCES_HANDLE')
+CODEFORCES_HANDLE = os.getenv('muaazbutt')
 GITHUB_TOKEN = os.getenv('CODEFORCE_TOKEN')  # Updated to match the secret name
 REPO_NAME = os.getenv('GITHUB_REPOSITORY')
 
